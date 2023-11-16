@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjf-Vs-mKp">
+                                <rect key="frame" x="206.66666666666663" y="299" width="170.33333333333337" height="60"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePadding="0.0" cornerStyle="fixed">
+                                    <imageReference key="image" image="minus" catalog="system" symbolScale="large" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="black"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="minusButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2s-AH-gcE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwo-gD-31e">
+                                <rect key="frame" x="16" y="389" width="361" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="RIt-V6-NhJ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                    <imageReference key="image" image="arrow.clockwise" catalog="system" symbolScale="large" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="black"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetCountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VGQ-YS-rI4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRS-aq-KG6">
+                                <rect key="frame" x="16" y="99" width="361" height="140"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Cd3-Jt-3RS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1H-UQ-Stg">
+                                <rect key="frame" x="16" y="299" width="170.66666666666666" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Xbb-Ut-uVN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="black"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="plusButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDP-Nc-d0b"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" bouncesZoom="NO" editable="NO" text="История изменений:" translatesAutoresizingMaskIntoConstraints="NO" id="dFA-r6-Chr">
+                                <rect key="frame" x="16" y="484" width="361" height="304"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hwo-gD-31e" firstAttribute="leading" secondItem="BRS-aq-KG6" secondAttribute="leading" id="3hA-to-TIq"/>
+                            <constraint firstItem="d1H-UQ-Stg" firstAttribute="leading" secondItem="BRS-aq-KG6" secondAttribute="leading" id="3w3-tw-Umy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dFA-r6-Chr" secondAttribute="bottom" constant="30" id="5B3-qP-Ba3"/>
+                            <constraint firstItem="dFA-r6-Chr" firstAttribute="trailing" secondItem="Hwo-gD-31e" secondAttribute="trailing" id="6Ua-mh-qAD"/>
+                            <constraint firstItem="dFA-r6-Chr" firstAttribute="leading" secondItem="Hwo-gD-31e" secondAttribute="leading" id="Bwk-r6-e7p"/>
+                            <constraint firstItem="Hwo-gD-31e" firstAttribute="top" secondItem="d1H-UQ-Stg" secondAttribute="bottom" constant="30" id="FfL-MN-wKX"/>
+                            <constraint firstItem="Pjf-Vs-mKp" firstAttribute="width" secondItem="d1H-UQ-Stg" secondAttribute="width" id="MSV-TS-0HW"/>
+                            <constraint firstItem="Pjf-Vs-mKp" firstAttribute="top" secondItem="d1H-UQ-Stg" secondAttribute="top" id="MyZ-WM-xN8"/>
+                            <constraint firstItem="BRS-aq-KG6" firstAttribute="trailing" secondItem="Pjf-Vs-mKp" secondAttribute="trailing" id="QCY-kF-m9f"/>
+                            <constraint firstItem="BRS-aq-KG6" firstAttribute="trailing" secondItem="Hwo-gD-31e" secondAttribute="trailing" id="Tcy-8p-wvY"/>
+                            <constraint firstItem="d1H-UQ-Stg" firstAttribute="top" secondItem="BRS-aq-KG6" secondAttribute="bottom" constant="60" id="VWM-6b-hxQ"/>
+                            <constraint firstItem="Pjf-Vs-mKp" firstAttribute="leading" secondItem="d1H-UQ-Stg" secondAttribute="trailing" constant="20" id="Xff-Ql-2x1"/>
+                            <constraint firstItem="BRS-aq-KG6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="hSR-js-MbN"/>
+                            <constraint firstItem="dFA-r6-Chr" firstAttribute="top" secondItem="Hwo-gD-31e" secondAttribute="bottom" constant="25" id="mgh-Cd-Rhh"/>
+                            <constraint firstItem="BRS-aq-KG6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oPJ-tQ-2Sc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BRS-aq-KG6" secondAttribute="trailing" constant="16" id="pYf-e1-LRO"/>
+                            <constraint firstItem="Pjf-Vs-mKp" firstAttribute="height" secondItem="d1H-UQ-Stg" secondAttribute="height" id="sax-5k-Kfg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="BRS-aq-KG6" id="akr-Pm-K2u"/>
+                        <outlet property="logTextView" destination="dFA-r6-Chr" id="Kp4-bP-YGt"/>
+                        <outlet property="minusCountButton" destination="Pjf-Vs-mKp" id="Tsz-Re-LOb"/>
+                        <outlet property="plusCountButton" destination="d1H-UQ-Stg" id="kgV-Qx-Bra"/>
+                        <outlet property="resetCountButton" destination="Hwo-gD-31e" id="f4d-3h-96J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43.511450381679388" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="minus" catalog="system" width="128" height="26"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
